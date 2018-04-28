@@ -11,7 +11,7 @@ public interface UserService {
 
 	AppUser findByName(String name);
 
-	void saveUser(AppUser user);
+	AppUser saveUser(AppUser user);
 
 	void updateUser(AppUser user);
 

@@ -4,11 +4,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.springboot.model.AppUser;
+import com.springboot.model.Rank;
 
 
 @Repository
-public interface UserRepository extends JpaRepository<AppUser, Integer> {
+public interface RankRepository extends JpaRepository<Rank, Integer> {
 
-	AppUser findByName(String name);
+	Rank findByRank(String rank);
 
 }

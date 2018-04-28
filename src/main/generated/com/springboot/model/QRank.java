@@ -20,7 +20,7 @@ public class QRank extends EntityPathBase<Rank> {
 
     public static final QRank rank1 = new QRank("rank1");
 
-    public final ListPath<AppUser, QAppUser> appUsers = this.<AppUser, QAppUser>createList("appUsers", AppUser.class, QAppUser.class, PathInits.DIRECT2);
+    public final SetPath<AppUser, QAppUser> appUsers = this.<AppUser, QAppUser>createSet("appUsers", AppUser.class, QAppUser.class, PathInits.DIRECT2);
 
     public final StringPath lastUpdatedBy = createString("lastUpdatedBy");
 

@@ -20,7 +20,7 @@ public class QTrainingstatus extends EntityPathBase<Trainingstatus> {
 
     public static final QTrainingstatus trainingstatus = new QTrainingstatus("trainingstatus");
 
-    public final ListPath<AppUser, QAppUser> appUsers = this.<AppUser, QAppUser>createList("appUsers", AppUser.class, QAppUser.class, PathInits.DIRECT2);
+    public final SetPath<AppUser, QAppUser> appUsers = this.<AppUser, QAppUser>createSet("appUsers", AppUser.class, QAppUser.class, PathInits.DIRECT2);
 
     public final StringPath lastUpdatedBy = createString("lastUpdatedBy");
 

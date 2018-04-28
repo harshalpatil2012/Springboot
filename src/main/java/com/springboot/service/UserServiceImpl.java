@@ -26,8 +26,8 @@ public class UserServiceImpl implements UserService{
 		return userRepository.findByName(name);
 	}
 
-	public void saveUser(AppUser user) {
-		userRepository.save(user);
+	public AppUser saveUser(AppUser user) {
+		return userRepository.save(user);
 	}
 
 	public void updateUser(AppUser user){
